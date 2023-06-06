@@ -88,7 +88,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 <img width="1440" alt="Screenshot signup" src="https://github.com/AlexNanut/MVC-Tech-Blog/assets/108309770/5470256f-ba6a-48d8-af0e-118a575d2669">
 
 ### Figure 2. Screenshot login 
-![Uploading Screenshot login.png…]()
+<img width="1440" alt="Screenshot login" src="https://github.com/AlexNanut/MVC-Tech-Blog/assets/108309770/1db79b55-93dd-4e2b-afcc-eca8fb4e7b24">
+
 
 ## Built With:
 
