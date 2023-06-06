@@ -106,11 +106,11 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 3. Creating and using Express.js servers and routes.
 4. Using Handlebars.js to create and display dynamic templates.
 5. Implementing user authentication and password hashing with bcrypt.
-6. Using Bootstrap for styling and layout.
+
 
 ### Continued Development:
 1. Pagination for blog posts and comments.
-2. Learning more handlebars.
+2. Learning more about how handlebars work. 
 3. Editing and deleting comments.
 
 ## Author
