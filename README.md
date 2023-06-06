@@ -83,6 +83,13 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ## GitHub Repository:
 [GitHub Repository:](https://github.com/AlexNanut/MVC-Tech-Blog)
 
+## Screenshots: 
+### Figure 1. Screenshot signup
+<img width="1440" alt="Screenshot signup" src="https://github.com/AlexNanut/MVC-Tech-Blog/assets/108309770/5470256f-ba6a-48d8-af0e-118a575d2669">
+
+### Figure 2. Screenshot login 
+![Uploading Screenshot login.png…]()
+
 ## Built With:
 
 - JSON
