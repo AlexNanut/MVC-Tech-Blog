@@ -71,8 +71,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 #### Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
-1. Option: A) Account login: click on "login" in the navigation menu - enter Username and Password then click "Sign In" to proceed.
-2. Option: B) Account Sign Up: click on "Sign Up" in the navigation menu - once open, enter Username, Email and Password then click "Sign Up" to proceed.
+1. Account login: click on "login" in the navigation menu - enter Username and Password then click "Sign In" to proceed.
+2. Account Sign Up: click on "Sign Up" in the navigation menu - once open, enter Username, Email and Password then click "Sign Up" to proceed.
 3. Once you have an account, you can create blog posts. 
 4. Create a blog post: click on the "dashboard" option in the navigation menu and select "Create a New Blog Post."
 5. Account Log out: click on "logout" in the navigation menu.
