@@ -1,10 +1,26 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 
-## Your Task
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+## Description.
 
-Your task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+The Tech Blog is a Heroku deployed application, allowing developers writing about technical concepts, recent advancement and new technologies. It allows users to publish blog posts and comment on other developers' posts as well. 
+
+## Table of Contents:
+- [Overview](#Overview)
+- [The Challenge](#The-Challenge)
+- [User Story](#User-Story)
+- [Built With](#Built-With)
+- [What I Learned](#What-I-Learned)
+- [Continued Development](#Continued-Development)
+- [Author](#Author)
+
+
+# Overview
+
+## The Challenge:
+
+The challenge of building this application involved creating a platform that could support multiple users, where users can add blog posts and comments allowing users to authenticate themselves and protect their personal data. The application had to be built using modern web development technologies and follow best practices, including the MVC architecture pattern.
 
 ## User Story
 
@@ -52,81 +68,51 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
-## Mock-Up
+## Usage Instructions:
 
-The following animation demonstrates the application functionality:
+#### Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+1. Option: A) Account login: click on "login" in the navigation menu - enter Username and Password then click "Sign In" to proceed.
+2. Option: B) Account Sign Up: click on "Sign Up" in the navigation menu - once open, enter Username, Email and Password then click "Sign Up" to proceed.
+3. Once you have an account, you can create blog posts. 
+4. Create a blog post: click on the "dashboard" option in the navigation menu and select "Create a New Blog Post."
+5. Account Log out: click on "logout" in the navigation menu.
 
-## Getting Started
+## Deployed Application Link:
+[Deployed Application Link:](https://mvc-tecblog.herokuapp.com/)
 
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+## GitHub Repository:
+[GitHub Repository:](https://github.com/ThomasCalle/Thomas-Model-View-Controller-MVC-Tech-Blog)
 
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
+## Built With:
 
-**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+- JSON
+- Dynamic JavaScript
+- Node.js 
+- Express.js
+- Bcryptjs
+- Connect Session Store using Sequelize: [6.32.0]
+- Dotenv: [16.1.3]
+- Express: [4.18.2]
+- Express Handlebars: [7.0.7]
+- Express-Session: [1.17.3]
+- Handlebars.js: [4.7.7]
+- Node MySql2: [3.3.3]
+- Sequelize: [6.32.0]
+- Visual Studio Code
 
-## Grading Requirements
+## What I Learned:
+1. Implementing Model-View-Controller (MVC) architecture.
+2. Creating and interacting with a MySQL database using Sequelize ORM.
+3. Creating and using Express.js servers and routes.
+4. Using Handlebars.js to create and display dynamic templates.
+5. Implementing user authentication and password hashing with bcrypt.
+6. Using Bootstrap for styling and layout.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+### Continued Development:
+1. Pagination for blog posts and comments.
+2. Learning more handlebars.
+3. Editing and deleting comments.
 
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-    * Application’s folder structure follows the Model-View-Controller paradigm.
-
-    * Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
-
-    * Application must be deployed to Heroku.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Author
+Follow me on Github at [AlexNanut](https://github.com/AlexNanut)
