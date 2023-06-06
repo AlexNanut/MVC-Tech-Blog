@@ -82,7 +82,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 [Deployed Application Link:](https://mvc-tecblog.herokuapp.com/)
 
 ## GitHub Repository:
-[GitHub Repository:](https://github.com/ThomasCalle/Thomas-Model-View-Controller-MVC-Tech-Blog)
+[GitHub Repository:](https://github.com/AlexNanut/MVC-Tech-Blog)
 
 ## Built With:
 
