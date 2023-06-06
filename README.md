@@ -1,38 +1,22 @@
-# MVC-Tech-Blog
+# 14 Model-View-Controller (MVC): Tech Blog
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Your Task
 
-## Description.
+Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
 
-The Tech Blog is Heroku deployed application, which serves as a CMS-style platform designed for Chess players and newcomers alike. It allows upu to publish blog posts. Additionally, the comment section below, allows users to interact and engage with another on Chess posts. The application follows the MVC paradigm, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+Your task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
+## User Story
 
-## Table of Contents:
-- [Overview](#Overview)
-- [The Challenge](#The-Challenge)
-- [Usage Information](#Usage-Information)
-- [Installation Process](#Installation-Process)
-- [Built With](#Built-With)
-- [What I Learned](#What-I-Learned)
-- [Continued Development](#Continued-Development)
-- [License](#License)
-- [Author](#Author)
-- [Acknowledgments](#Acknowledgments)
-
-# Overview
-
-## The Challenge:
-
-The challenge of building this application involved creating a scalable and robust platform that could support multiple users, blog post and comments. The application was designed with security in mind, allowing users to authenticate themselves and protect their personal data. Furthermore, the application had to be built using modern web development technologies and follow best practices, including the MVC architecture pattern.
-
-## Assigned User Story:
-```
+```md
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ```
-## Acceptance Criteria:
-```
+
+## Acceptance Criteria
+
+```md
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
 THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
@@ -68,70 +52,81 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
+## Mock-Up
 
+The following animation demonstrates the application functionality:
 
-## Usage Instructions:
+![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
 
-#### Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
+## Getting Started
 
-1. Option: A) Account login: click on "login" in the navigation menu - enter Username and Password then click "Sign In" to proceed.
-1. Option: B) Account Sign Up: click on "Sign Up" in the navigation menu - once open, enter Username, Email and Password then click "Sign Up" to proceed.
-2. Once you have an account, you can create blog posts and comment on other users' posts.
-3. Create a blog post: click on the "dashboard" option in the navigation menu and select "Create a New Blog Post."
-4. Enter a title and contents, then click "Create Post" to save and publish.
-5. View existing blog posts by clicking on "Home" in the navigation menu.
-6. Comment: to view or "add a new comment" go to any blog post, click on any blog post - once open, you may view the comment history as well as add a new comments.
-7. Edit or delete your blog post: click on the "dashboard" option in the navigation menu and select the post you wish to edit or delete.
-8. Account Log out: click on "logout" in the navigation menu.
+Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
 
-## Deployed Application Link:
-[Deployed Application Link:](https://herokuapp.com/)
+You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
-## GitHub Repository:
-[GitHub Repository:](https://github.com/)
+**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
 
+## Grading Requirements
 
-## Screenshots:
-### Figure 1. Screenshot
+> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+>
+> * A repository that has no code
+>
+> * A repository that includes a unique name but nothing else
+>
+> * A repository that includes only a README file but nothing else
+>
+> * A repository that only includes starter code
 
+This Challenge is graded based on the following criteria:
 
-## Installation Process
-1. Clone the Repository from GitHub 
-(or) Download Zip Folder from Repository from GitHub
-Open the cloned (or downloaded) repository in any source code editor.
+### Technical Acceptance Criteria: 40%
 
-## Built With:
-- Saiyan Pride
-- JSON:[ JSON](https://www.npmjs.com/package/json)
-- Dynamic JavaScript
-- Node.js [Version 16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
-- Express.js:[Express.js](https://expressjs.com/en/starter/installing.html)
-- Bcryptjs: [2.4.3](https://www.npmjs.com/package/bcryptjs)
-- Connect Session Store using Sequelize: [7.0.4](https://www.npmjs.com/package/connect-session-sequelize)
-- Dotenv: [8.6.0](https://www.npmjs.com/package/dotenv)
-- Express: [4.17.1](https://www.npmjs.com/package/express)
-- Express Handlebars: [5.2.0](https://www.npmjs.com/package/express-handlebars)
-- Express-Session: [1.17.1](https://www.npmjs.com/package/express-session)
-- Handlebars.js: [4.7.6](https://www.npmjs.com/package/handlebars)
-- Node MySql2: [2.3.3](https://www.npmjs.com/package/mysql2)
-- Sequelize: [6.29.3](https://www.npmjs.com/package/sequelize)
-- License Badge: [Shields.io](https://shields.io/)
-- Visual Studio Code: [Website](https://code.visualstudio.com/)
+* Satisfies all of the preceding acceptance criteria plus the following:
 
-## What I Learned:
-1. Implementing Model-View-Controller (MVC) architecture.
-2. Creating and interacting with a MySQL database using Sequelize ORM.
-3. Creating and using Express.js servers and routes.
-4. Using Handlebars.js to create and display dynamic templates.
-5. Implementing user authentication and password hashing with bcrypt.
-6. Using Bootstrap for styling and layout.
+    * Application’s folder structure follows the Model-View-Controller paradigm.
 
-### Continued Development:
-1. Pagination for blog posts and comments.
-2. Editing and deleting comments.
-3. User profile pages.
-4. Social media integration for sharing posts.
+    * Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
 
-## License & Copyright ©
-  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Open Source Initiative Link](https://opensource.org/licenses/MIT)
+    * Application must be deployed to Heroku.
+
+### Deployment: 32%
+
+* Application deployed at live URL.
+
+* Application loads with no errors.
+
+* Application GitHub URL submitted.
+
+* GitHub repository contains application code.
+
+### Application Quality: 15%
+
+* User experience is intuitive and easy to navigate.
+
+* User interface style is clean and polished.
+
+* Application resembles the mock-up functionality provided in the Challenge instructions.
+
+### Repository Quality: 13%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains quality readme file with description, screenshot, and link to deployed application.
+
+## Review
+
+You are required to submit BOTH of the following for review:
+
+* The URL of the functional, deployed application.
+
+* The URL of the GitHub repository, with a unique name and a readme describing the project.
+
+---
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
